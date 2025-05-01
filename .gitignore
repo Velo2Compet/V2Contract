@@ -1,7 +1,12 @@
 node_modules
 .env
 package-lock.json
-
+.openzeppelin
+ignition
+scripts
+test
+harhat.config.ts
+tsconfig.json
 # Hardhat files
 /cache
 /artifacts
