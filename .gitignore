@@ -3,6 +3,7 @@
 
 # But do not ignore the gitignore file itself
 !.gitignore
+!README.md
 
 # Keep the contracts folder
 !contracts/
