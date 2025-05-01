@@ -51,7 +51,8 @@ contract V2Contract is Initializable, OwnableUpgradeable, UUPSUpgradeable {
         uint256 maxSupply
     ) external payable returns (address) {
         require(msg.value >= commissionFee, "Insufficient commission fee");
-        V2CERC20 token = new V2CERC20(name, symbol, msg.sender, maxSupply);
+        uint256 scaled = maxSupply * (10 ** 18);
+        V2CERC20 token = new V2CERC20(name, symbol, msg.sender, scaled);
         emit TokenDeployed(address(token), msg.sender, contractVersion);
         return address(token);
     }
