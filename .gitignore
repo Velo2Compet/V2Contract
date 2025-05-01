@@ -1,23 +1,37 @@
-node_modules
+# Ignore everything
+*
+
+# But do not ignore the gitignore file itself
+!.gitignore
+
+# Keep the contracts folder
+!contracts/
+
+# Keep all files inside contracts
+!contracts/**
+
+# Re-ignore other unwanted files/folders
+node_modules/
 .env
 package-lock.json
-.openzeppelin
-ignition
-scripts
-test
-harhat.config.ts
+.openzeppelin/
+ignition/
+scripts/
+test/
+hardhat.config.ts
 tsconfig.json
+
 # Hardhat files
-/cache
-/artifacts
+/cache/
+/artifacts/
 
 # TypeChain files
-/typechain
-/typechain-types
+/typechain/
+/typechain-types/
 
 # solidity-coverage files
-/coverage
+/coverage/
 /coverage.json
 
-# Hardhat Ignition default folder for deployments against a local node
-ignition/deployments/chain-31337
+# Hardhat Ignition default folder
+ignition/deployments/chain-31337/
