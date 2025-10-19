@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract V2CERC20 is ERC20, Ownable {
     uint256 public immutable maxSupply;
 
-    constructor( // commit
+    constructor(
         string memory name_,
         string memory symbol_,
         address owner_,
