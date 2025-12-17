@@ -7,7 +7,7 @@ import {UUPSUpgradeable} from "@openzeppelin/contracts-upgradeable/proxy/utils/U
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {V2CERC20} from "./V2CERC20.sol";
 
-contract V2Contract is Initializable, OwnableUpgradeable, UUPSUpgradeable { //chacha
+contract V2Contract is Initializable, OwnableUpgradeable, UUPSUpgradeable {
 
     string public contractVersion;
     uint256 public commissionFee;
